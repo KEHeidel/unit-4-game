@@ -37,3 +37,17 @@ $(document).ready(function() {
       $("#loseScore").text(losses).css("text-align", "center");
     }
   
+  // Function to update wins and losses and resets the game
+  function score() {
+    if (counter > targetRandom) {
+      alert("Sorry you lost!");
+      losses++;
+      $("#loseScore").text(losses);
+      startgame()
+    } else if (counter == targetRandom) {
+      alert("You won!");
+      wins++;
+      $("#winScore").text(wins);
+      startgame()
+    }
+  }
