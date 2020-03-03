@@ -3,87 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Links for reset css, bootstrap, and personal css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>Document</title>
   </head>
   <body>
-
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
+          <!-- Game title -->
           <h3>
             Crystal Collector Game
           </h3>
           <div class="row">
-            <div class="col-md-3">
-            </div>
+            <div class="col-md-3"></div>
             <div class="col-md-6">
               <p>
                 <!-- Instructions for game -->
               </p>
             </div>
-            <div class="col-md-3">
-            </div>
+            <div class="col-md-3"></div>
           </div>
           <div class="row">
-            <div class="col-md-2">
-            </div>
+            <div class="col-md-2"></div>
             <div class="col-md-3">
               <p>
                 <!-- Starting Random Number -->
               </p>
+              <div id="randomNumber"></div>
             </div>
-            <div class="col-md-2">
-            </div>
+            <div class="col-md-2"></div>
             <div class="col-md-3">
               <p>
                 <!-- User Guess -->
               </p>
+              <div id="playerCount"></div>
             </div>
-            <div class="col-md-2">
-            </div>
+            <div class="col-md-2"></div>
           </div>
           <div class="row">
+            <div class="col-md-2"></div>
+            <!-- Images of crystals -->
             <div class="col-md-2">
+              <input id="purple" type="image" src="assets/images/amethyst.jpeg"
+              />
             </div>
             <div class="col-md-2">
-              <input type="image" src="assets/images/amethyst.jpeg"/>
+              <input id="black" type="image" src="assets/images/blackDiamond.jpg"
+              />
             </div>
             <div class="col-md-2">
-              <input type="image" src="assets/images/blackDiamond.jpg"/>
+              <input id="red" type="image" src="assets/images/heart.jpeg" />
             </div>
             <div class="col-md-2">
-              <input type="image" src="assets/images/heart.jpeg"/>
+              <input id="blue" type="image" src="assets/images/teardrop.jpeg" />
             </div>
-            <div class="col-md-2">
-              <input type="image" src="assets/images/teardrop.jpeg"/>
-            </div>
-            <div class="col-md-2">
-            </div>
+            <div class="col-md-2"></div>
           </div>
           <div class="row">
-            <div class="col-md-2">
-            </div>
+            <div class="col-md-2"></div>
             <div class="col-md-3">
               <p>
                 <!-- Number of Wins -->
               </p>
+              <div id="winScore"></div>
             </div>
-            <div class="col-md-2">
-            </div>
+            <div class="col-md-2"></div>
             <div class="col-md-3">
               <p>
                 <!-- Number of Losses -->
               </p>
+              <div id="loseScore"></div>
             </div>
-            <div class="col-md-2">
-            </div>
+            <div class="col-md-2"></div>
           </div>
         </div>
       </div>
     </div>
 
-      <!-- added jQuery CDN link -->
+    <!-- added jQuery CDN link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- added JavaScript link -->
     <script src="assets/javascript/game.js"></script>
