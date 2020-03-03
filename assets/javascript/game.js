@@ -51,3 +51,30 @@ $(document).ready(function() {
       startgame()
     }
   }
+
+  startgame()
+
+  $("#purple").on("click", function() {
+    counter += Crystals.crystal1.value;
+    $("#playerCount").text(counter);
+    score();
+  });
+
+  $("#black").on("click", function() {
+    counter += Crystals.crystal2.value;
+    $("#playerCount").text(counter);
+    score();
+  });
+
+  $("#red").on("click", function() {
+    counter += Crystals.crystal3.value;
+    $("#playerCount").text(counter);
+    score();
+  });
+
+  $("#blue").on("click", function() {
+    counter += Crystals.crystal4.value;
+    $("#playerCount").text(counter);
+    score();
+  });
+});
