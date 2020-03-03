@@ -12,3 +12,23 @@ body {
     margin-bottom: 75px; 
     margin-top: 20px;     
 }
+
+.Instructions {
+    margin-bottom: 75px;
+}
+
+.RNG {
+  text-align: center;
+}
+
+.PG {
+  text-align: center;
+}
+
+.Wins {
+    text-align: center;
+}
+
+.Losses {
+    text-align: center;
+}
